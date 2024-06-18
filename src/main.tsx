@@ -2,16 +2,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MiniApp1 from './MiniApp1';
+import { createRoot } from 'react-dom/client';
 
 // Wrap your React bootstrap code in a function
-function startApp() {
+/*function startApp() {
   ReactDOM.render(
     <React.StrictMode>
       <MiniApp1 />
     </React.StrictMode>,
     document.getElementById('miniapp')
   );
-}
+}*/
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(
+  <React.StrictMode>
+    <MiniApp1 />
+  </React.StrictMode>
+);
 
 // Attach that function to the window object
 declare global {
@@ -26,8 +34,8 @@ declare global {
 window.miniapp1 = {
   init: function() {
     console.log('From MiniApp -> Miniapp1 initialized');
-    startApp();
-    console.log('From MiniApp -> Miniapp1 startApp called');
+    //startApp();
+    //console.log('From MiniApp -> Miniapp1 startApp called');
   }
 };
 
