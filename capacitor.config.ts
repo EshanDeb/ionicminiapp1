@@ -3,7 +3,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'ionicMiniApp1',
-  webDir: 'www',
+  webDir: 'dist',
   plugins: {
     LiveUpdates: {
       appId: '0b3b44b6',
