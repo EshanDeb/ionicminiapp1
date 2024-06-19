@@ -24,7 +24,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar color="primary">
-          <IonTitle>MiniApp1</IonTitle>
+          <IonTitle>MiniApp1 - Updated</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
